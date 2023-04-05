@@ -7,8 +7,7 @@ def sadelistqaytar(n):
         reqemler.difference_update(set(range(k*2,n+1,k)))
     return sadeler
 k = int(input("Ededi daxil edin: "))
-# with open('2.txt','w') as f:
-#     f.writelines(str(sorted((sadelistqaytar(k)))))
+
 with open('1.txt','w') as f:
     f.writelines(str(max(sadelistqaytar(k))))
 
